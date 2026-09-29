@@ -1,0 +1,101 @@
+record_id = "TEVV-001"
+status = "OPEN"
+framework = "NIST TEVV-Athlon"
+focus = "Measurement, evidence, and claim resolution"
+
+source_publisher = "National Institute of Standards and Technology"
+source_document = "NIST AI 200-2, The TEVV-Athlon Framework for Evaluating AI Systems"
+source_version_or_date = "Initial Public Draft, 2026"
+source_url = "https://doi.org/10.6028/NIST.AI.200-2.ipd"
+source_related_links = [
+    "https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems",
+]
+reviewed_material = [
+    "NIST framework overview and abstract.",
+    "NIST request for public input.",
+    "Previously developed Structural Assurability crosswalk.",
+]
+source_review_pending = [
+    "Direct section-level review of the complete draft.",
+    "Verification of the exact locations relevant to this record.",
+]
+
+source_structure = """
+The framework describes a method for constructing customized assessments
+of AI systems. Its assessment structure includes: Blocks representing
+measurement concepts of interest; Events and Tools used to test AI
+systems; Data produced by those assessment activities. These are the
+source's concepts, not definitions introduced by Structural Assurability.
+"""
+
+evaluative_claim = "Does the evidence produced by a specified TEVV-Athlon assessment support the distinctions necessary to evaluate its intended claim?"
+claim_adoption_status = "No particular NIST assessment or claim has yet been selected for detailed evaluation."
+
+required_distinctions = """
+The investigation will identify two or more claim-relevant alternatives,
+then determine whether the selected assessment would produce
+distinguishable observations for those alternatives under specified
+conditions. The alternatives must be derived from a concrete assessment
+question rather than assumed in advance.
+"""
+
+evidence_source_described = [
+    "Assessment data produced through Events and Tools associated with selected Blocks.",
+]
+evidence_to_be_established = [
+    "The observations available to the evaluator.",
+    "How those observations relate to the intended claim.",
+    "Whether relevant differences could remain unobserved.",
+    "What evidence is required beyond the reported measurements.",
+]
+
+evaluator_conditions = [
+    "Evaluator role.",
+    "Information and instrumentation access.",
+    "Required cooperation.",
+    "Applicable resource constraints.",
+    "Assumptions about evidence provenance and integrity.",
+]
+
+assumptions = """
+No universal claim-resolution guarantee is attributed to TEVV-Athlon. Any
+model constructed for this record must state its own admissible-world and
+observation assumptions.
+"""
+
+applicable_concepts = [
+    "Assurance context",
+    "Evaluator conditions and resource bounds",
+    "Claim-material evidence",
+    "Observation models",
+    "Observational indistinguishability",
+    "Claim-resolution bounds",
+]
+mapping_explanation = "The theory establishes that a specified observation model cannot resolve a claim when two admissible worlds disagree on the claim but produce identical observations."
+theory_boundary = "Applying that result to a TEVV-Athlon assessment requires independent justification of the modeled worlds, observations, and claims."
+
+research_question = "For a specified TEVV-Athlon assessment, what additional information, if any, is needed to determine whether its measurements can distinguish the alternatives material to its evaluative claim?"
+
+analysis_completed = [
+    "Initial conceptual crosswalk.",
+    "Identification of relevant formal concepts.",
+    "Constructed and executed two illustrative finite-model witness tests under researcher-defined assumptions (experiments/tevv-athlon/query_violation.py).",
+]
+analysis_pending = [
+    "Select one concrete assessment from the draft.",
+    "Identify its evaluative claim.",
+    "Record the relevant Events, Tools, and Blocks.",
+    "Specify evaluator conditions and assumptions.",
+    "Investigate witness realizability and refine the observation model to represent sampled prompts, responses, and human annotations under the combined User Testing and Red Teaming assessment.",
+    "Review relevant adjacent material in the draft.",
+]
+counterexample_caveat = "A constructed counterexample would establish a limitation only under its specified modeling assumptions."
+
+outcome_statement = "No additional findings have been established."
+possible_outcomes = "The outcome may be a supported finding, a clarification of applicable assumptions, an illustrative application of the theory, or no additional finding."
+
+related_material = [
+    "../nist-tevv-athlon.md",
+    "README.md",
+    "../../../SPECIFICATION.md",
+]

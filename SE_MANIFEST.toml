@@ -1,0 +1,68 @@
+# ============================================================
+# SE_MANIFEST.toml (Repository Declaration)
+# ============================================================
+
+schema = "se-manifest-schema"
+schema_version = "0.5.0"
+schema_url = "https://raw.githubusercontent.com/structural-explainability/se-manifest-schema/main/manifest-schema.toml"
+
+[meta]
+framework = "Structural Explainability"
+framework_url = "https://github.com/structural-explainability"
+purpose = "Declares this repository's role in the Structural Explainability ecosystem."
+
+[repository]
+organization = "structural-explainability"
+name = "se-pilot-structural-assurability"
+class = "pilot"
+kind = "structural-assurability"
+status = "active"
+since = "2026"
+summary = "Applied research investigating the applicability and limitations of claim-relative Structural Assurability."
+
+[layer]
+space = "research"
+role = "pilot"
+
+[depends]
+required = []
+optional = []
+
+[provides]
+artifacts = [
+    "README.md",
+    "SPECIFICATION.md",
+    "docs",
+    "docs/en/mappings",
+    "experiments/tevv-athlon/query_violation.py",
+    "src/se_pilot_structural_assurability",
+    "tests",
+]
+
+[scope]
+includes = [
+    "source-grounded mappings of external assurance frameworks",
+    "claim-relative analysis of evaluation questions",
+    "observation and evidentiary capability analysis",
+    "evaluator conditions and resource constraints",
+    "integrity, provenance, and trust assumptions",
+    "claim-resolution limitations",
+    "reproducible exploratory experiments where needed",
+    "counterexamples, research findings, and unresolved questions",
+    "potential contributions to external evaluation frameworks",
+]
+
+excludes = [
+    "ownership of Structural Assurability formal definitions or theorems",
+    "automatic derivation of assurance conclusions from structural profiles",
+    "claims of operational validity from finite-model examples alone",
+    "general certification of AI system safety or trustworthiness",
+    "official implementation or endorsement of external frameworks",
+]
+
+[citation]
+cff = "CITATION.cff"
+preferred = "CITATION.cff"
+
+[traceability]
+identifier_map = "none"

@@ -1,0 +1,113 @@
+record_id = "AISI-001"
+status = "OPEN"
+framework = "UK AI Security Institute safety-case research"
+focus = "Cyber-inability arguments and proxy evaluations"
+
+source_publisher = "UK AI Security Institute"
+source_document = "Safety case template for frontier AI: A cyber inability argument"
+source_version_or_date = "Published December 2024"
+source_url = "https://www.aisi.gov.uk/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2"
+source_related_links = [
+  "https://www.aisi.gov.uk/blog/safety-case-template-for-inability-arguments",
+]
+reviewed_material = [
+  "Published abstract.",
+  "Companion explanation of the argument structure.",
+  "Previously developed Structural Assurability crosswalk.",
+]
+source_review_pending = [
+  "Detailed examination of the complete research paper.",
+  "Identification of exact passages governing each proposed evidentiary relationship.",
+]
+
+source_structure = """
+The template develops a structured inability argument using Claims,
+Arguments, Evidence. Its described elements include: an overall safety
+claim; more specific subclaims; risk models; proxy tasks derived from
+those risk models; evaluation settings; evaluation results; arguments
+concerning evaluation sufficiency. The accompanying explanation identifies
+concerns including inadequate capability elicitation. These are
+source-described components of the safety-case approach.
+"""
+
+evaluative_claim = "The template considers an argument that an AI system lacks capabilities sufficient to pose unacceptable offensive cyber risk."
+claim_adoption_status = "The pilot does not adopt that claim for any particular AI system."
+
+required_distinctions = """
+The investigation must identify which alternatives the relevant evidence
+is intended to distinguish. For example, a constructed model might
+distinguish between systems that produce the same proxy-task results but
+differ in their capabilities in a specified risk context. Whether those
+alternatives are admissible under the template's assumptions must be
+established before treating them as a counterexample.
+"""
+
+evidence_source_described = [
+  "Risk models.",
+  "Proxy-task selection and justification.",
+  "Evaluation settings.",
+  "Results from capability evaluations.",
+  "Evidence supporting the adequacy of evaluation.",
+]
+evidence_to_be_established = [
+  "Which observations are available.",
+  "Which observations are material to each subclaim.",
+  "Which relevant capabilities may remain unobserved.",
+  "What additional evidence supports the argument connecting proxy tasks to risk models.",
+]
+
+evaluator_conditions = [
+  "Who conducts the evaluation.",
+  "Who constructs and reviews the safety case.",
+  "Access to the evaluated system.",
+  "Control over evaluation settings.",
+  "Resources needed to conduct the evaluation.",
+  "Relevant cooperation and trust assumptions.",
+]
+
+assumptions = """
+The source describes the need to justify proxy-task selection and
+evaluation sufficiency. The investigation must distinguish: assumptions
+governing observation and access; assumptions about elicitation and
+measurement; assumptions connecting proxy-task performance to
+risk-relevant capabilities; assumptions connecting capability evidence to
+the overall safety argument. Not all these relationships are formalized
+by Structural Assurability.
+"""
+
+applicable_concepts = [
+  "Claim-relative evidence",
+  "Evaluator conditions",
+  "Evidentiary capabilities",
+  "Observational indistinguishability",
+  "Claim-resolution bounds",
+  "Evidence independence and integrity",
+]
+mapping_explanation = "Structural Assurability can investigate whether specified observations distinguish alternatives material to an evaluative claim."
+theory_boundary = "It does not independently establish that a proxy task is an adequate measure of a real-world capability or that the resulting safety argument is justified. Those inferential relationships require separate argumentation and supporting evidence."
+
+research_question = "Which parts of a cyber-inability safety-case argument concern the structural availability of claim-material evidence, and which require additional assumptions connecting proxy evaluations to broader claims about capabilities and risk?"
+
+analysis_completed = [
+  "Initial conceptual crosswalk.",
+  "Identification of the source's argument structure.",
+  "Identification of potentially relevant formal concepts.",
+]
+analysis_pending = [
+  "Select a specific risk model and associated proxy task.",
+  "Identify the applicable subclaim.",
+  "Establish the evaluation setting and observations.",
+  "Examine the source's justification for the proxy-task and evaluation relationships.",
+  "Specify relevant alternative worlds and assumptions.",
+  "Determine which limitations can be expressed by the current Structural Assurability theory.",
+  "Record which obligations remain outside that theory.",
+]
+counterexample_caveat = "A possible indistinguishability example must not ignore assumptions or supporting evidence already provided by the source."
+
+outcome_statement = "No additional findings have been established."
+possible_outcomes = "The investigation may identify an applicable structural limitation, clarify the theory's boundary with assurance argumentation, or produce no additional finding."
+
+related_material = [
+  "../uk-aisi-safety-cases.md",
+  "../../../SPECIFICATION.md",
+]

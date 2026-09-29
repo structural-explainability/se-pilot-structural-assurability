@@ -1,0 +1,44 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+
+cff-version: "1.2.0"
+message: "If you use this work, please cite it using the metadata in this file."
+type: software
+
+title: "SE Pilot: Structural Assurability"
+version: "0.1.0"
+date-released: "2026-09-29"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+
+repository-code: "https://github.com/structural-explainability/se-pilot-structural-assurability"
+url: "https://github.com/structural-explainability/se-pilot-structural-assurability"
+license: MIT
+
+abstract: >
+  Applied research investigating the applicability and limitations
+  of claim-relative Structural Assurability when examining concrete
+  assurance claims and external evaluation frameworks. The pilot
+  develops source-grounded mappings, explicit research questions,
+  and reproducible experiments where appropriate. Initial
+  investigations examine NIST's TEVV-Athlon framework and the
+  UK AI Security Institute's cyber-inability safety-case research,
+  with particular attention to available observations, evidentiary
+  capabilities, evaluator conditions, trust assumptions, and the
+  limits of claim resolution.
+
+keywords:
+  - structural-assurability
+  - structural-explainability
+  - assurance
+  - assurance-engineering
+  - evidentiary-capabilities
+  - claim-resolution
+  - observational-indistinguishability
+  - AI-evaluation
+  - reproducible-research
