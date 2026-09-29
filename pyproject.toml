@@ -54,7 +54,7 @@ se-pilot-structural-assurability = "se_pilot_structural_assurability.cli:main"
 # WHY: Consistent test discovery and coverage visibility.
 minversion = "9.0"
 testpaths = ["tests"]
-addopts = "--cov=src/se_pilot_structural_assurability/ --cov-fail-under=0 --cov-report=term-missing"
+addopts = "--cov=src/se_pilot_structural_assurability/ --cov-fail-under=20 --cov-report=term-missing"
 filterwarnings = [
     "ignore:FigureCanvasAgg is non-interactive, and thus cannot be shown:UserWarning",
 ]
