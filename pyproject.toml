@@ -41,6 +41,9 @@ Homepage = "https://github.com/structural-explainability/se-pilot-structural-ass
 Issues = "https://github.com/structural-explainability/se-pilot-structural-assurability/issues"
 Repository = "https://github.com/structural-explainability/se-pilot-structural-assurability"
 
+[project.scripts]
+se-pilot-structural-assurability = "se_pilot_structural_assurability.cli:main"
+
 # ============================================================
 # SECTION 2: TOOL CONFIGURATION (Professional basics)
 # ============================================================

@@ -91,6 +91,9 @@ uvx se-mapping-assurance validate-mapping --path docs/en/mappings/uk-aisi/AISI-0
 
 # Run experiments
 uv run python experiments/tevv-athlon/query_violation.py
+
+# Confirm CLI displays help.
+uv run se-pilot-structural-assurability
 ```
 
 ### Task 4. Commit, push, tag
