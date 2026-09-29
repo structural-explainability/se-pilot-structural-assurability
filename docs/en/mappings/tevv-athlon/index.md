@@ -62,6 +62,5 @@ The investigation remains open.
 
 ## Study Material
 
-- [TEVV-Athlon investigation](tevv-athlon/index.md)
-- [TEVV-001 research record](tevv-athlon/TEVV-001.toml)
-- [Experimental design](../experiment/10-design/index.md)
+- [TEVV-001 research record](TEVV-001.toml)
+- [Experimental design](https://structural-explainability.github.io/se-pilot-structural-assurability/experiment/10-design/index.md)
