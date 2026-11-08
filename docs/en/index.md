@@ -47,11 +47,9 @@ Particular questions concern the relationship among evaluation
 claims, observations, evidentiary capabilities, evaluator conditions,
 and assumptions about evidence integrity and trust.
 
-A public comment may be developed if the analysis supports a
-specific issue and a useful proposed clarification.
-
-The investigation remains valuable even if it produces no
-public comment or proposed framework change.
+The investigation may produce supported findings,
+clarifications of modeling assumptions, proposed
+formal extensions, or no additional findings.
 
 See the
 [TEVV-Athlon mapping records](https://github.com/structural-explainability/se-pilot-structural-assurability/tree/main/docs/en/mappings/tevv-athlon).

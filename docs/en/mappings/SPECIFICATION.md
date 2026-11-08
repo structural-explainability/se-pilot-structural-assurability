@@ -32,10 +32,9 @@ The initial questions concern:
 - Assumptions about evidence integrity, provenance, and trust.
 - Conditions under which available evidence cannot resolve a claim.
 
-A public comment may be developed if the analysis identifies a
-specific, defensible issue and a useful proposed clarification.
-
-Submitting a public comment is not a required research outcome.
+The investigation may produce source-grounded findings,
+clarifications of assumptions, proposed formal extensions,
+or no additional findings.
 
 ## Research Method
 

@@ -92,16 +92,16 @@ uvx se-manifest-schema validate-manifest --strict
 # Format markdown
 npx markdownlint-cli2 --fix
 
-# Validate examples.
-uvx se-mapping-assurance validate-mapping --path docs/en/mappings/tevv-athlon/TEVV-001.toml --strict
-
-uvx se-mapping-assurance validate-mapping --path docs/en/mappings/uk-aisi/AISI-001.toml --strict
+# Confirm CLI displays help.
+uv run se-pilot-structural-assurability
 
 # Run experiments
 uv run python experiments/tevv-athlon/query_violation.py
 
-# Confirm CLI displays help.
-uv run se-pilot-structural-assurability
+# Validate examples.
+uvx se-mapping-assurance validate-mapping --path docs/en/mappings/tevv-athlon/TEVV-001.toml --strict
+
+uvx se-mapping-assurance validate-mapping --path docs/en/mappings/uk-aisi/AISI-001.toml --strict
 ```
 
 ### Task 3. Git Add-Commit-Push, Then Tag

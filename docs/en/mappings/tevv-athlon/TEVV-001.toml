@@ -82,8 +82,8 @@ analysis_completed = [
     "Constructed and executed two illustrative finite-model witness tests under researcher-defined assumptions (experiments/tevv-athlon/query_violation.py).",
 ]
 analysis_pending = [
-    "Select one concrete assessment from the draft.",
-    "Identify its evaluative claim.",
+    "Complete the source-grounded analysis of the selected query-violation assessment.",
+    "Distinguish NIST's evaluation objective from the two researcher-defined claims.",
     "Record the relevant Events, Tools, and Blocks.",
     "Specify evaluator conditions and assumptions.",
     "Investigate witness realizability and refine the observation model to represent sampled prompts, responses, and human annotations under the combined User Testing and Red Teaming assessment.",
@@ -91,7 +91,7 @@ analysis_pending = [
 ]
 counterexample_caveat = "A constructed counterexample would establish a limitation only under its specified modeling assumptions."
 
-outcome_statement = "No additional findings have been established."
+outcome_statement = "Two conditional claim-resolution limitations have been demonstrated in researcher-defined finite models. No operational or externally validated finding is asserted."
 possible_outcomes = "The outcome may be a supported finding, a clarification of applicable assumptions, an illustrative application of the theory, or no additional finding."
 
 related_material = [

@@ -159,3 +159,14 @@ print(
 w2 = witnesses(Worlds, [redteam_only], claim_tested_organic)[0]
 print("  witness: same red-team result, organic behavior differs")
 print("  organic:", w2[1][0][:3], "vs", w2[2][0][:3])
+print()
+print("== Positive control ==")
+print(
+    "Organic observation on the 3 tested scenarios "
+    "resolves organic-use claim on the 3:",
+    resolved(Worlds, [user_testing_only], claim_tested_organic),
+)
+print(
+    "Organic observation on the 3 tested scenarios resolves claim over all 4:",
+    resolved(Worlds, [user_testing_only], claim_all),
+)
