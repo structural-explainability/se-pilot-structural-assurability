@@ -189,5 +189,5 @@ argumentation, or produce no additional finding.
 
 ## Related Material
 
-- [Recovered AISI crosswalk](../uk-aisi-safety-cases.md)
+- [Recovered AISI crosswalk](uk-aisi-safety-cases.md)
 - [Pilot specification](../SPECIFICATION.md)
