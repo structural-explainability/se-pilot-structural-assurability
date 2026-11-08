@@ -54,13 +54,24 @@ Package versions are derived from Git tags. Tag `vX.Y.Z` to release.
 
 Follow these steps exactly when creating a new release.
 
+### One-Time Zenodo Authorization
+
+1. Sign in to Zenodo.
+2. Open your profile menu in the upper-right.
+3. Select GitHub.
+4. Click Sync now.
+5. Find structural-explainability/ this repo.
+6. Turn on the repository toggle/slider.
+7. Refresh the page and confirm it appears as enabled.
+8. Zenodo will ingest future GitHub Releases from this repo.
+
 ### Task 1. Update release metadata (manual edits)
 
 1.1. CHANGELOG.md: add section, move unreleased entries, update links
 1.2. `CITATION.cff` - update `version` and `date-released`
 1.3. `pyproject.toml` - update build system `fallback-version`
 
-### Task 2. Validate
+### Task 2. Set Up and Validate
 
 Run from the repository root in PowerShell.
 
@@ -71,22 +82,19 @@ Run from the repository root in PowerShell.
 # Update GitHub Actions and pin all action references to immutable SHAs
 uvx gha-tools autoupdate --pin=all --write .github/workflows
 
-# Update hooks
-uvx prek update
-git add -A
-uvx prek run --all-files
-
 # Audit the resulting GitHub configuration for security findings
 uvx zizmor@latest .github/
 
-# Validate citation metadata
+# Validate
 uvx cffconvert --validate
+uvx se-manifest-schema validate-manifest --strict
 
 # Format markdown
 npx markdownlint-cli2 --fix
 
 # Validate examples.
 uvx se-mapping-assurance validate-mapping --path docs/en/mappings/tevv-athlon/TEVV-001.toml --strict
+
 uvx se-mapping-assurance validate-mapping --path docs/en/mappings/uk-aisi/AISI-001.toml --strict
 
 # Run experiments
@@ -96,11 +104,11 @@ uv run python experiments/tevv-athlon/query_violation.py
 uv run se-pilot-structural-assurability
 ```
 
-### Task 4. Commit, push, tag
+### Task 3. Git Add-Commit-Push, Then Tag
 
 ```shell
 git add -A
-git commit -m "Prepare X.Y.Z"
+git commit -m "Prep X.Y.Z"
 git push -u origin main
 ```
 
@@ -111,11 +119,35 @@ git tag vX.Y.Z -m "X.Y.Z"
 git push origin vX.Y.Z
 ```
 
+### Task 4. Verify the Release and Zenodo archive
+
+The release-on-tag workflow publishes a GitHub Release
+for MAJOR and MINOR tags only (vX.Y.0).
+PATCH tags (vX.Y.Z, Z > 0) stay as tags.
+
+To verify:
+
+```shell
+gh release view vX.Y.Z  # confirm Release exists with notes + artifacts
+gh run list --workflow=release-pypi.yml   # confirm the workflow succeeded
+```
+
+If Zenodo archiving is enabled, confirm that the release has a
+version-specific DOI and is linked to the repository's concept DOI.
+Record the DOI in CITATION.cff only when it has been assigned and verified.
+
+```shell
+uvx --from se-manifest-schema se-manifest check-version --require-tag
+```
+
+Confirms CITATION.cff version matches the pushed git tag.
+Run this after `git push origin vX.Y.Z`; it will fail before that point.
+
 ## Only As Needed (delete a tag)
 
 ```shell
-git tag -d vX.Z.Y
-git push origin :refs/tags/vX.Z.Y
+git tag -d vX.Y.Z
+git push origin :refs/tags/vX.Y.Z
 ```
 
 ## Links

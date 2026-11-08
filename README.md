@@ -48,9 +48,9 @@ claim-relative Structural Assurability can contribute,
 where additional justification is required, and where the theory
 itself may need further development.
 
-NIST has opened the framework for
-[public comment](https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems)
-until 2026-10-06.
+NIST's
+[public comment period](https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems)
+on the framework closed 2026-10-06.
 
 See the [study specification](docs/en/mappings/SPECIFICATION.md)
 and [mappings](docs/en/mappings/index.md).
@@ -131,13 +131,13 @@ uvx gha-tools autoupdate --pin=all --write .github/workflows
 # Then audit the resulting GitHub configuration for security findings
 uvx zizmor@latest .github/
 
-uv run prek install -f
-uv run prek update --freeze --cooldown-days 7
+uvx prek install -f
+uvx prek update --freeze --cooldown-days 7
 
 git add -A
-uv run prek run --all-files
+uvx prek run --all-files
 # repeat if changes were made
-uv run prek run --all-files
+uvx prek run --all-files
 
 uvx se-mapping-assurance validate-mapping --path docs/en/mappings/tevv-athlon/TEVV-001.toml --strict
 

@@ -54,7 +54,7 @@ The investigation remains valuable even if it produces no
 public comment or proposed framework change.
 
 See the
-[TEVV-Athlon mapping records](https://github.com/structural-explainability/se-pilot-structural-assurability/tree/main/mappings/tevv-athlon).
+[TEVV-Athlon mapping records](https://github.com/structural-explainability/se-pilot-structural-assurability/tree/main/docs/en/mappings/tevv-athlon).
 
 ## Research Boundaries
 
@@ -70,7 +70,7 @@ a difference in evidentiary capabilities or claim resolution.
 
 ## Project Resources
 
-- [Study Specification](https://github.com/structural-explainability/se-pilot-structural-assurability/blob/main/SPECIFICATION.md)
+- [Study Specification](https://github.com/structural-explainability/se-pilot-structural-assurability/blob/main/docs/en/mappings/SPECIFICATION.md)
 - [Research Repository](https://github.com/structural-explainability/se-pilot-structural-assurability)
 - [Formal Theory: Structural Assurability](https://github.com/structural-explainability/se-theory-structural-assurability)
 - [Formal Theory Documentation](https://structural-explainability.github.io/se-theory-structural-assurability/)

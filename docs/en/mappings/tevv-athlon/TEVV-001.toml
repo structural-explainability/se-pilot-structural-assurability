@@ -29,7 +29,7 @@ source's concepts, not definitions introduced by Structural Assurability.
 """
 
 evaluative_claim = "Does the evidence produced by a specified TEVV-Athlon assessment support the distinctions necessary to evaluate its intended claim?"
-claim_adoption_status = "No particular NIST assessment or claim has yet been selected for detailed evaluation."
+claim_adoption_status = "The query-violation example in Section 3 of the draft is the selected assessment. The two claims examined are researcher-defined and are not asserted by NIST."
 
 required_distinctions = """
 The investigation will identify two or more claim-relevant alternatives,
@@ -97,5 +97,5 @@ possible_outcomes = "The outcome may be a supported finding, a clarification of 
 related_material = [
     "../nist-tevv-athlon.md",
     "README.md",
-    "../../../SPECIFICATION.md",
+    "../SPECIFICATION.md",
 ]

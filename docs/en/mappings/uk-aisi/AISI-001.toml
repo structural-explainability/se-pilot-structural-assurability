@@ -109,5 +109,5 @@ possible_outcomes = "The investigation may identify an applicable structural lim
 
 related_material = [
   "../uk-aisi-safety-cases.md",
-  "../../../SPECIFICATION.md",
+  "../SPECIFICATION.md",
 ]

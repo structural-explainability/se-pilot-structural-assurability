@@ -31,9 +31,9 @@ optional = []
 [provides]
 artifacts = [
     "README.md",
-    "SPECIFICATION.md",
     "docs",
     "docs/en/mappings",
+    "docs/en/mappings/SPECIFICATION.md",
     "experiments/tevv-athlon/query_violation.py",
     "src/se_pilot_structural_assurability",
     "tests",

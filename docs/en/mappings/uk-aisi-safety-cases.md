@@ -37,4 +37,3 @@ and construction of an applicable observation model remain outstanding.
 ## Study Material
 
 - [AISI-001 research record](uk-aisi/AISI-001.toml)
-- [Initial crosswalk](uk-aisi/crosswalk.md)
