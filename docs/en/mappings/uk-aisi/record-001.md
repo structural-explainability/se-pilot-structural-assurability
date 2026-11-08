@@ -12,7 +12,8 @@
 - Publisher: UK AI Security Institute
 - Document: Safety case template for frontier AI:
   A cyber inability argument
-- Published: December 2024
+- Published: 12 December 2024 (AISI page);
+  arXiv v1 submitted 12 November 2024
 - Source: https://www.aisi.gov.uk/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2
 
 Companion explanation:
@@ -94,6 +95,9 @@ To be established for a concrete application:
   connecting proxy tasks to risk models.
 
 ## Evaluator Conditions
+
+Status: `NOT ESTABLISHED` in the reviewed material
+(abstract and companion explanation).
 
 The investigation must establish:
 
@@ -190,4 +194,5 @@ argumentation, or produce no additional finding.
 ## Related Material
 
 - [Recovered AISI crosswalk](uk-aisi-safety-cases.md)
+- [UK AISI study page](../uk-aisi-safety-cases.md)
 - [Pilot specification](../SPECIFICATION.md)

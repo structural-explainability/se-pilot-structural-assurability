@@ -22,7 +22,7 @@ and assumptions relevant to claim resolution.
 Two initial finite-model constructions examine conditional
 claim-resolution questions.
 Their claims and modeling assumptions are researcher-defined
-not defined by NIST.
+and are not defined by NIST.
 
 The investigation also considers what additional evidence or
 justification may be needed to connect sampled measurements

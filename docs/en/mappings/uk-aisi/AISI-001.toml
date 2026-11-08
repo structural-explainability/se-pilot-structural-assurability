@@ -5,7 +5,7 @@ focus = "Cyber-inability arguments and proxy evaluations"
 
 source_publisher = "UK AI Security Institute"
 source_document = "Safety case template for frontier AI: A cyber inability argument"
-source_version_or_date = "Published December 2024"
+source_version_or_date = "AISI page published 12 December 2024; arXiv v1 submitted 12 November 2024"
 source_url = "https://www.aisi.gov.uk/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2"
 source_related_links = [
     "https://doi.org/10.48550/arXiv.2411.08088",
@@ -108,4 +108,8 @@ counterexample_caveat = "A possible indistinguishability example must not ignore
 outcome_statement = "No additional findings have been established."
 possible_outcomes = "The investigation may identify an applicable structural limitation, clarify the theory's boundary with assurance argumentation, or produce no additional finding."
 
-related_material = ["../uk-aisi-safety-cases.md", "../SPECIFICATION.md"]
+related_material = [
+    "uk-aisi-safety-cases.md",
+    "../uk-aisi-safety-cases.md",
+    "../SPECIFICATION.md",
+]
